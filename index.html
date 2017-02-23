@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Home Automation System </title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	
+	<main class="container">
+		<h1> Home Automation System </h1>
+		<hr>
+		<div id="homeAutomationDiv" class="row">
+			<!-- Components Control buttons-->
+			<div id="remoteContainer" class="col-lg-2 col-md-2 col-sm-2">
+				<button id="bulbButton" class="btn btn-default">Light</button><br>
+				<div class="tempLabel">Temp</div>
+				<div id="temperatureButtons" class="input-group">	
+					<span id="decreaseTemp" class="input-group-addon"><span class="glyphicon glyphicon-triangle-bottom"></span></span>
+					<input type="text" id="temperatureInput" class="form-control">
+					<span id="increaseTemp" class="input-group-addon"><span class="glyphicon glyphicon-triangle-top"></span></span>
+				</div>
+				<button id="curtainButton" class="btn btn-default">Curtains</button>
+			</div>
+			<!-- Components container -->
+			<div id="componentContainer" class="col-lg-9 col-md-9 col-sm-9 componentContainer">
+				<div id="bulb" class="bulb-off bulb-on">
+					
+				</div>
+				<div id="temperature">
+					<div>Temperature set to <span id="setTemp" ></span></div>
+				</div>
+				<div id="curtains">
+					<div class="curtain-left curtain-open"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

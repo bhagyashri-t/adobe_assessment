@@ -1,0 +1,135 @@
+h1 {
+	text-align: center;
+	color: #808080;
+}
+
+#bulb {
+	width: 30%;
+	margin: auto;
+	height: 30%;
+	border: 1px solid #ffffcc;
+	border-radius: 30%;
+	position: relative;	
+	top: 30%;
+	background-color: #ffff66;
+	
+	/*	box-shadow: 0px 0px 10px #cccc00;*/
+}
+
+.bulb-on {
+
+	border: 1px solid #ffff4d;
+	box-shadow: 0px 0px 300px #ffff4d;
+	background: radial-gradient(#ffffff 1%, #ffff66);	
+}
+
+#temperature {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0,0,65,0.8);
+}
+
+#curtains {
+	margin: 2%;
+	width: 97%;
+	height: 97%;
+	background-color: #ffffb3;
+	border-top: 5px solid #c9c9c9;
+	border-radius: 5px;
+	display: none;
+	z-index: 10;
+}
+.curtain-left {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: linear-gradient(to right,  #800000 ,  #ffff99 , #800000 , #ffff99 ,  #800000, #ffff99  ,  #800000, #ffff99  ,  #800000, #ffff99  ,  #800000 );
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #c9c9c9;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ffffff;
+	transition : width 2s linear;
+}
+
+.curtain-open {
+	width: 20px;
+}
+#homeAutomationDiv {
+	height: 100%;
+}
+#remoteContainer, #componentContainer {
+	/*display: inline-block;
+	vertical-align: top;*/
+	border: 1px solid #c9c9c9;
+	border-radius: 5px;
+	margin-left: 2%;
+	height: 400px;
+	padding: 1%;
+}
+.componentContainer {
+	background: rgba(0,0,0, 0.8);
+}
+#remoteContainer .btn.btn-default {
+	width: 100%;
+	margin: 20% 0%;
+}
+
+
+.tempLabel {
+	width: 50%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+}
+#temperatureInput {
+	/*width: 28%;*/
+	/*border: 1px solid #c9c9c9;*/
+	/*padding: 3%;*/
+	font-size: large;
+	text-align: center;
+	/*border-radius: 5px;*/
+}	
+.glyphicon.glyphicon-triangle-bottom, .glyphicon.glyphicon-triangle-top {
+	font-size: large;
+	/*position: absolute;
+	margin-top: 35%;*/
+}
+
+.glyphicon.glyphicon-triangle-top  {
+	/*margin-left: 5%;*/
+
+}
+
+#temperatureButtons {
+	/*width: 100%;*/
+	margin-bottom: 10%;
+}
+#temperature div {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	position: relative;
+	top: 50%;
+	font-size: x-large;
+	font-weight: 300;
+	color: #ffffff;
+}
+#temperatureButtons span {
+	cursor: pointer;
+}
+
+.componentContent {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	height: 30%;
+	position: absolute;
+	top: 50%;
+	z-index: 8;
+}
+
+.componentTemperature {
+	background-color: #ffffff;
+}
